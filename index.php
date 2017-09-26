@@ -14,12 +14,13 @@
   $obj->substring($text);
   
   
-  $array = array(1,2,3,4,5,6,7);
+  $array = array(1,2,3,4,5,5,6,7);
   $obj->countArray($array);
   $obj->elementExist($array);
   $obj->position($array);
   $obj->printRange();
   $obj->sortArray($array);
+  $obj->removeDuplicateElement($array);
 
   class main {
 
@@ -131,6 +132,13 @@
       foreach ($array as $key => $val) {
           echo "Array[" . $key . "] = " . $val . "\n";
       }
+      echo '<hr>';
+    }
+
+    public function removeDuplicateElement($array){
+      echo '<h1>6.array_unique(array) function:</h1>';
+      $result = array_unique($array);
+      print_r($result);
       echo '<hr>';
     }
 
