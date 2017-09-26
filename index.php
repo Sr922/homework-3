@@ -15,7 +15,7 @@
   
   
   $array = array(1,2,3,4,5,6,7);
-  $obj->printArray($array);
+  $obj->countArray($array);
 
   class main {
 
@@ -90,6 +90,12 @@
     public function substring($text){
       echo '<h1>10.substr(string, start) function:</h1>';
       echo substr($text, 5);
+      echo '<hr>';
+    }
+
+    public function countArray($array){
+      echo '<h1>1.count(var) function:</h1>';
+      echo count($array);
       echo '<hr>';
     }
 
