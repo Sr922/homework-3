@@ -7,6 +7,7 @@
   $obj->splitString($text);
   $obj->stringWordCount($text);
   $obj->stringRepeat();
+  $obj->findAString($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -52,6 +53,14 @@
     public function stringRepeat(){
       echo '<h1>5.str_repeat(input, multiplier) function:</h1>';
       echo str_repeat("****_____****", 5);
+      echo '<hr>';
+    }
+
+    public function findAString($text){
+      echo '<h1>6.stristr(haystack, needle) function:</h1>';
+      if(stristr($text, 'php') === FALSE) {
+        echo "\"php\" not found in $text";
+      }
       echo '<hr>';
     }
 
