@@ -5,6 +5,7 @@
   $obj->findNumberOfOccurances($text);
   $obj->trimStartingWhiteSpaces($text);
   $obj->splitString($text);
+  $obj->stringWordCount($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -38,6 +39,12 @@
       echo '<h1>3.str_split function:</h1>';
       $newStringArray = str_split($text);
       print_r($newStringArray);
+      echo '<hr>';
+    }
+
+    public function stringWordCount($text){
+      echo '<h1>4.str_word_count(string) function:</h1>';
+      print_r(str_word_count($text, 1));
       echo '<hr>';
     }
 
