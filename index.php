@@ -3,6 +3,7 @@
   $obj = new main();
   $text = "\t\tTest String for String functions";
   $obj->findNumberOfOccurances($text);
+  $obj->trimStartingWhiteSpaces($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -21,6 +22,14 @@
       foreach (count_chars($text, 1) as $i => $val) {
          echo "There were $val instance(s) of \"" , chr($i) , "\" in the string.\n";
       }
+      echo '<hr>';
+    }
+
+    public function trimStartingWhiteSpaces($text){
+      echo '<h1>2.ltrim function:</h1>';
+      echo "Before trim $text</br>";
+      $trimmed = ltrim($text);
+      echo "After trim $trimmed";
       echo '<hr>';
     }
 
