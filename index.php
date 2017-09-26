@@ -6,6 +6,7 @@
   $obj->trimStartingWhiteSpaces($text);
   $obj->splitString($text);
   $obj->stringWordCount($text);
+  $obj->stringRepeat();
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -45,6 +46,12 @@
     public function stringWordCount($text){
       echo '<h1>4.str_word_count(string) function:</h1>';
       print_r(str_word_count($text, 1));
+      echo '<hr>';
+    }
+
+    public function stringRepeat(){
+      echo '<h1>5.str_repeat(input, multiplier) function:</h1>';
+      echo str_repeat("****_____****", 5);
       echo '<hr>';
     }
 
