@@ -11,6 +11,7 @@
   $obj->stringLength($text);
   $obj->reverseString($text);
   $obj->regExMatch();
+  $obj->substring($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -83,6 +84,12 @@
       echo '<h1>9.preg_match(pattern, subject) function:</h1>';
       preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
       print_r($matches);
+      echo '<hr>';
+    }
+
+    public function substring($text){
+      echo '<h1>10.substr(string, start) function:</h1>';
+      echo substr($text, 5);
       echo '<hr>';
     }
 
