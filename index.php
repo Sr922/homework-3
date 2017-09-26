@@ -23,6 +23,7 @@
   $obj->removeDuplicateElement($array);
   $obj->sumOfElements($array);
   $obj->reverseArray($array);
+  $obj->popElement($array);
 
   class main {
 
@@ -154,6 +155,13 @@
       echo '<h1>8.array_reverse(array) function:</h1>';
       $reversed = array_reverse($array);
       print_r($reversed);
+      echo '<hr>';
+    }
+
+    public function popElement($array){
+      echo '<h1>9.array_pop(array) function:</h1>';
+      $popedElement = array_pop($array);
+      print_r($popedElement);
       echo '<hr>';
     }
 
