@@ -16,6 +16,7 @@
   
   $array = array(1,2,3,4,5,6,7);
   $obj->countArray($array);
+  $obj->elementExist($array);
 
   class main {
 
@@ -96,6 +97,14 @@
     public function countArray($array){
       echo '<h1>1.count(var) function:</h1>';
       echo count($array);
+      echo '<hr>';
+    }
+
+    public function elementExist($array){
+      echo '<h1>2.in_array(needle, haystack) function:</h1>';
+      if (in_array(6, $array)) {
+          echo "Got 6";
+      }
       echo '<hr>';
     }
 
