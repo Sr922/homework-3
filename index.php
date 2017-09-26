@@ -4,6 +4,7 @@
   $text = "\t\tTest String for String functions";
   $obj->findNumberOfOccurances($text);
   $obj->trimStartingWhiteSpaces($text);
+  $obj->splitString($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -30,6 +31,13 @@
       echo "Before trim $text</br>";
       $trimmed = ltrim($text);
       echo "After trim $trimmed";
+      echo '<hr>';
+    }
+
+    public function splitString($text){
+      echo '<h1>3.str_split function:</h1>';
+      $newStringArray = str_split($text);
+      print_r($newStringArray);
       echo '<hr>';
     }
 
