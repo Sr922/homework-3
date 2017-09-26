@@ -22,6 +22,7 @@
   $obj->sortArray($array);
   $obj->removeDuplicateElement($array);
   $obj->sumOfElements($array);
+  $obj->reverseArray($array);
 
   class main {
 
@@ -146,6 +147,13 @@
     public function sumOfElements($array){
       echo '<h1>7.array_sum(array) function:</h1>';
       echo "sum(array) = " . array_sum($array) . "\n";
+      echo '<hr>';
+    }
+
+    public function reverseArray($array){
+      echo '<h1>8.array_reverse(array) function:</h1>';
+      $reversed = array_reverse($array);
+      print_r($reversed);
       echo '<hr>';
     }
 
