@@ -18,6 +18,7 @@
   $obj->countArray($array);
   $obj->elementExist($array);
   $obj->position($array);
+  $obj->printRange();
 
   class main {
 
@@ -115,6 +116,13 @@
       echo '<hr>';
     }
 
+    public function printRange(){
+      echo '<h1>4.range(low, high) function:</h1>';
+      foreach (range(0, 100, 10) as $number) {
+        echo $number;
+      }
+      echo '<hr>';
+    }
     public function __destruct() {
 
       echo '</br> I\'m Done';
