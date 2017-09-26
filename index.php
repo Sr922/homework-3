@@ -8,6 +8,7 @@
   $obj->stringWordCount($text);
   $obj->stringRepeat();
   $obj->findAString($text);
+  $obj->stringLength($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -61,6 +62,12 @@
       if(stristr($text, 'php') === FALSE) {
         echo "\"php\" not found in $text";
       }
+      echo '<hr>';
+    }
+
+    public function stringLength($text){
+      echo '<h1>7.strlen(string) function:</h1>';
+      echo strlen($text);
       echo '<hr>';
     }
 
