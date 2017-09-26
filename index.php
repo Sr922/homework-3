@@ -24,6 +24,7 @@
   $obj->sumOfElements($array);
   $obj->reverseArray($array);
   $obj->popElement($array);
+  $obj->productOfArray($array);
 
   class main {
 
@@ -162,6 +163,12 @@
       echo '<h1>9.array_pop(array) function:</h1>';
       $popedElement = array_pop($array);
       print_r($popedElement);
+      echo '<hr>';
+    }
+
+    public function productOfArray($array){
+      echo '<h1>10.array_product(array) function:</h1>';
+      echo "product(array()) = " . array_product($array) . "\n";
       echo '<hr>';
     }
 
