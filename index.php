@@ -21,6 +21,7 @@
   $obj->printRange();
   $obj->sortArray($array);
   $obj->removeDuplicateElement($array);
+  $obj->sumOfElements($array);
 
   class main {
 
@@ -139,6 +140,12 @@
       echo '<h1>6.array_unique(array) function:</h1>';
       $result = array_unique($array);
       print_r($result);
+      echo '<hr>';
+    }
+
+    public function sumOfElements($array){
+      echo '<h1>7.array_sum(array) function:</h1>';
+      echo "sum(array) = " . array_sum($array) . "\n";
       echo '<hr>';
     }
 
