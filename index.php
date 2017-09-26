@@ -19,6 +19,7 @@
   $obj->elementExist($array);
   $obj->position($array);
   $obj->printRange();
+  $obj->sortArray($array);
 
   class main {
 
@@ -123,6 +124,16 @@
       }
       echo '<hr>';
     }
+
+    public function sortArray($array){
+      echo '<h1>5.sort(array) function:</h1>';
+      sort($array, SORT_NATURAL | SORT_FLAG_CASE);
+      foreach ($array as $key => $val) {
+          echo "Array[" . $key . "] = " . $val . "\n";
+      }
+      echo '<hr>';
+    }
+
     public function __destruct() {
 
       echo '</br> I\'m Done';
