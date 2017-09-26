@@ -10,6 +10,7 @@
   $obj->findAString($text);
   $obj->stringLength($text);
   $obj->reverseString($text);
+  $obj->regExMatch();
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -78,7 +79,13 @@
       echo '<hr>';
     }
 
-    
+    public function regExMatch(){
+      echo '<h1>9.preg_match(pattern, subject) function:</h1>';
+      preg_match('/(foo)(bar)(baz)/', 'foobarbaz', $matches, PREG_OFFSET_CAPTURE);
+      print_r($matches);
+      echo '<hr>';
+    }
+
     public function __destruct() {
 
       echo '</br> I\'m Done';
