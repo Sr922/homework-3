@@ -17,6 +17,7 @@
   $array = array(1,2,3,4,5,6,7);
   $obj->countArray($array);
   $obj->elementExist($array);
+  $obj->position($array);
 
   class main {
 
@@ -105,6 +106,12 @@
       if (in_array(6, $array)) {
           echo "Got 6";
       }
+      echo '<hr>';
+    }
+
+    public function position($array){
+      echo '<h1>3.pos() function:</h1>';
+      echo pos($array);
       echo '<hr>';
     }
 
