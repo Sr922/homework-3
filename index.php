@@ -9,6 +9,7 @@
   $obj->stringRepeat();
   $obj->findAString($text);
   $obj->stringLength($text);
+  $obj->reverseString($text);
   
   
   $array = array(1,2,3,4,5,6,7);
@@ -68,6 +69,12 @@
     public function stringLength($text){
       echo '<h1>7.strlen(string) function:</h1>';
       echo strlen($text);
+      echo '<hr>';
+    }
+
+    public function reverseString($text){
+      echo '<h1>8.strrev(string) function:</h1>';
+      echo strrev($text);
       echo '<hr>';
     }
 
